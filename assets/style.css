@@ -10,11 +10,13 @@
         h1  {
             color:green; 
             font-size: 90px;
+            font-family: "Sigmar", sans-serif;
         }
 
         h2  {
             color: lightseagreen; 
             font-size: 40px;
+            font-family: "gonte", sans-serif;
         }
 
         p   {
