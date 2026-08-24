@@ -1,0 +1,31 @@
+ <style>
+        body {
+            background-color:blanchedalmond;
+        }
+        
+        .blue-background {
+            background-color: lightblue;
+        }
+
+        h1  {
+            color:green; 
+            font-size: 90px;
+        }
+
+        h2  {
+            color: lightseagreen; 
+            font-size: 40px;
+        }
+
+        p   {
+            color:gray;
+        }
+        
+        .black-paragraph {
+            color:black;
+        }
+
+        #biggest {
+            font-size:25px;
+        }
+</style>
