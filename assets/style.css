@@ -1,6 +1,6 @@
- <style>
+
         body {
-            background-color:blanchedalmond;
+            background-color: #474B24;
         }
         
         .blue-background {
@@ -8,26 +8,55 @@
         }
 
         h1  {
-            color:green; 
+            color:#5fb8bb; 
             font-size: 90px;
-            font-family: "Sigmar", sans-serif;
+            font-family: "Notable", sans-serif;
+            font-weight: normal;
+            font-style:normal;
         }
 
         h2  {
-            color: lightseagreen; 
-            font-size: 40px;
-            font-family: "gonte", sans-serif;
+            color: #8DDCA4; 
+            font-size: 50px;
+            font-family: "Cookie", cursive;
+            font-weight: normal;
+            font-style: normal;
         }
 
         p   {
-            color:gray;
-        }
-        
-        .black-paragraph {
-            color:black;
+            color: white;
+            font-size: 25px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 35px;
+            letter-spacing: -1px;
         }
 
-        #biggest {
-            font-size:25px;
+        a   {
+            color: burlywood;
+            font-size: 30px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 1.5;
+            letter-spacing: -1px;
         }
-</style>
+
+        a:hover {
+            font-size:35px;
+            color: #F5A6E6;
+        }
+
+
+        .small-link {
+            font-size: 25px;
+        }
+
+        hr {
+            color: #F5A6E6;
+        }
+
+        .my-container {
+            width: 75vw;
+        }
