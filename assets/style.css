@@ -1,15 +1,64 @@
 
+        :root {
+            --fs-p: clamp(1rem, 3vi + -1.1rem, 10rem);
+            --fs-h1: clamp(1rem, 10.97vi + -1.74rem, 7.03rem);
+            --fs-h2: clamp(1rem, 14.16vi + -2.54rem, 8.79rem);
+            --fs-a: clamp(1rem, 3.9vi + -2.24rem, 11rem);
+            --font-family: "Space Grotesk", sans-serif;
+            --letter-spacing: -1px;
+        }
+
         body {
             background-color: #474B24;
         }
-        
-        .blue-background {
-            background-color: lightblue;
+
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid red;
+            align-content: space-evenly;
+            gap: 2rem 3rem;
+
         }
+
+        .box1 {
+            border: 1px solid blueviolet;
+            padding: 1rem;
+        }
+
+/*        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "head head head"
+                                " main side side"
+                                "bottom bottom bottom";
+            gap: 1rem;
+
+        }
+
+        .head {
+            grid-area: head;
+        }
+
+        .main {
+            grid-area: main;
+            gap: 1rem;
+        }
+
+        .side {
+            grid-area: side;
+            gap: 1rem;
+            width: 65vw;
+        }
+
+        .bottom {
+            grid-area: bottom;
+        }
+            */
 
         h1  {
             color:#5fb8bb; 
-            font-size: 90px;
+            font-size: var(--fs-h1);
             font-family: "Notable", sans-serif;
             font-weight: normal;
             font-style:normal;
@@ -25,32 +74,27 @@
 
         p   {
             color: white;
-            font-size: 25px;
-            font-family: "Space Grotesk", sans-serif;
+            font-size: var(--fs-p);
+            font-family: var(--font-family);
             font-weight: normal;
             font-style: normal;
             line-height: 35px;
-            letter-spacing: -1px;
+            letter-spacing: var(--letter-spacing);
         }
 
         a   {
-            color: burlywood;
-            font-size: 30px;
-            font-family: "Space Grotesk", sans-serif;
+            color: #deb887;
+            font-size: var(--fs-a);
+            font-family: var(--font-family);
             font-weight: bold;
             font-style: italic;
             line-height: 1.5;
-            letter-spacing: -1px;
+            letter-spacing: var(--letter-spacing);
         }
 
         a:hover {
             font-size:35px;
             color: #F5A6E6;
-        }
-
-
-        .small-link {
-            font-size: 25px;
         }
 
         hr {
@@ -60,3 +104,70 @@
         .my-container {
             width: 75vw;
         }
+
+       
+/*
+        .box {
+            background:plum;
+            border: 3px dashed aquamarine;
+            padding: 1rem;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid slateblue;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+*/
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 5px;
+            }
+        }
+
+        /*
+        .container1 {
+            display: grid;
+            border: 1px solid blue;
+            grid-template-areas: "nav nav nav"
+                                " main main side"
+                                "footer footer footer";
+            gap: 1rem;
+
+        }
+        .nav1 {
+            grid-area: nav;
+            border: 2px solid brown;
+            background: #F5A6E6;
+        }
+
+        .main1 {
+            min-height: 200px;
+            grid-area: main;
+            border: 2px solid brown;
+            background: purple;
+        }
+
+        .side1 {
+            grid-area: side;
+            border: 2px solid brown;
+            background: blue;
+        }
+
+        .footer1 {
+            grid-area: footer;
+            border: 2px solid brown;
+            background: green;
+        }
+            */
