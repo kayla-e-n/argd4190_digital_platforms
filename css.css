@@ -1,0 +1,30 @@
+#bg {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 1px solid;
+}
+
+/* stack every part in top left */
+#bg > * {
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+#word {
+    font-size: 60px;
+}
+
+img {
+  width: 200px;
+}
+
+#ghostBody {
+    width: 500px;
+    height: 600px;
+}
+
+#mouth {
+    translate: 150px 230px;
+}

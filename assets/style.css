@@ -82,8 +82,12 @@
         }
 
         @media screen and (max-width: 768px) {
-            html {
-                font-size: 5px;
+            .container1 {
+                flex-direction: column;
             }
+        }
+
+        #para {
+            color:#F5A6E6;
         }
 
