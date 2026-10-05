@@ -41,6 +41,14 @@
             font-style: normal;
         }
 
+        h3 {
+            color: #deb887;
+            font-size: var(--fs-p);
+            font-family: var(--font-family);
+            line-height: 35px;
+            letter-spacing: var(--letter-spacing);
+        }
+
         p   {
             color: white;
             font-size: var(--fs-p);
@@ -70,6 +78,25 @@
             color: #F5A6E6;
         }
 
+        button {
+            line-height:1.5;
+            padding: 1%;
+            font-family: "Space Grotesk", sans-serif;
+            font-size: 25px;
+            border: none;
+            outline: none;
+            background-color:#F5A6E6;
+            border-radius: 25px;
+
+
+        }
+        button:hover {
+            background-color: #EE73D7;
+        }
+        button:active {
+            background-color: #F5A6E6;
+        }
+
         .my-container {
             width: 75vw;
         }
@@ -88,6 +115,39 @@
         }
 
         #para {
-            color:#F5A6E6;
+            color:white;
+            line-height: 40px;
         }
+
+/* for data filter in json */
+
+        #movies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            border: 20px;
+            border-color: #5fb8bb;
+        }
+
+        .card img {
+            width: 520px;
+            height: 819px;
+        }
+
+        /* .genres {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+        } */
+
+        .selected {
+            background: #E539C4;
+        }   
+
+        
 

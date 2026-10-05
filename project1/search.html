@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Kayla</a>
+        <a href="recents.html"> Recent Watches</a>
+        <a href="top4.html"> Top 4 Films</a>
+        <a href="TV.html"> TV Extras</a>
+    </nav>
+
+<hr>
+
+<h1>Movie Search</h1>
+
+<hr>
+
+    <div>
+        <button data-genre="all" class="filter genreFilter">All</button>
+        <button data-genre="drama" class="filter genreFilter">Drama</button>
+        <button data-genre="horror" class="filter genreFilter">Horror</button>
+        <button data-genre="animation" class="filter genreFilter">Animation</button>
+        <button data-genre="avant-garde" class="filter genreFilter">Avant-Garde</button>
+        <button data-genre="documentary" class="filter genreFilter">Documentary</button>
+        <button data-genre="war" class="filter genreFilter">War</button>
+        <button data-genre="action" class="filter genreFilter">Action</button>
+        <button data-genre="comedy" class="filter genreFilter">Comedy</button>
+        <button data-genre="romance" class="filter genreFilter">Romance</button>
+        <button data-genre="mystery" class="filter genreFilter">Mystery</button>
+    </div>
+    <br>
+    <div>
+        <button data-rated="⭐⭐/⭐⭐⭐⭐⭐" class="filter ratedFilter">2/5 Stars</button>
+        <button data-rated="⭐⭐.5/⭐⭐⭐⭐⭐" class="filter ratedFilter">2.5/5 Stars</button>
+        <button data-rated="⭐⭐⭐/⭐⭐⭐⭐⭐" class="filter ratedFilter">3/5 Stars</button>
+        <button data-rated="⭐⭐⭐.5/⭐⭐⭐⭐⭐" class="filter ratedFilter">3.5/5 Stars</button>
+        <button data-rated="⭐⭐⭐⭐/⭐⭐⭐⭐⭐" class="filter ratedFilter">4/5 Stars</button>
+        <button data-rated="⭐⭐⭐⭐.5/⭐⭐⭐⭐⭐" class="filter ratedFilter">4.5/5 Stars</button>
+        <button data-rated="⭐⭐⭐⭐⭐/⭐⭐⭐⭐⭐" class="filter ratedFilter">5/5 Stars</button>
+    </div>
+    <br>
+    <section id="movies"></section>
+    <script src="script.js"></script>
+</body>
+</html>

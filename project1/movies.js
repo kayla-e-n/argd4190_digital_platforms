@@ -1,0 +1,443 @@
+const movies = [
+    {
+    "title": "Buddy",
+    "genre": "Horror",
+    "year": 2026,
+    "director": "Casper Kelly",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/buddy.jpg",
+    "alt_text": "glitchy tv screen of an orange unicorn mascot"
+  },
+  {
+    "title": "Backrooms",
+    "genre": "Horror",
+    "year": 2026,
+    "director": "Kane Parsons",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/backrooms.webp",
+    "alt_text": "woman looking scared against a beige wall"
+  },
+  {
+    "title": "Shawshank Redemption",
+    "genre": "Drama",
+    "year": 1994,
+    "director": "Frank Darabont",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/shawshank.jpg",
+    "alt_text": "man standing in the rain with his arms spread"
+  },
+  {
+    "title": "Scooby-Doo the Movie",
+    "genre": "Comedy",
+    "year": 2002,
+    "director": "Raja Gonsnell",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/scoobydoo.webp",
+    "alt_text": "daphney, scooby, shaggy, velma, and fred look scared with a shadow of a jester"
+  },
+  {
+    "title": "Pitch Perfect",
+    "genre": "Comedy",
+    "year": 2012,
+    "director": "Jason Moore",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/pitchperfect.jpg",
+    "alt_text": "a group of girls all wearing sunglasses with yellow spray paint title"
+  },
+  {
+    "title": "Rental Family",
+    "genre": "Drama",
+    "year": 2025,
+    "director": "Hikari",
+    "rating": "3.5/5",
+    "path": "../assets/dataset_images/rental family.jpg",
+    "alt_text": "a japanese man, an elderly japanese man, a white man, a young girl, and a japanese woman all sitting on a train"
+  },
+  {
+    "title": "Accepted",
+    "genre": "Comedy",
+    "year": 2006,
+    "director": "Steve Pink",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/accepted.PNG",
+    "alt_text": "a group of seven people stand in front of a school building celebrating"
+  },
+  {
+    "title": "Imitation of Life",
+    "genre": "Drama",
+    "year": 1959,
+    "director": "Douglas Sirk",
+    "rating": "2/5",
+    "path": "../assets/dataset_images/imitationoflife.jpg",
+    "alt_text": "illustrative poster showing a blonde woman in the center with two men, and three women around her"
+  },
+  {
+    "title": "Casablanca",
+    "genre": "Drama",
+    "year": 1942,
+    "director": "Michael Curtiz",
+    "rating": "3.5/5",
+    "path": "../assets/dataset_images/casablanca.jpg",
+    "alt_text": "an illustrative red and white poster with the title at the bottom and a man and woman faces side-by-side in red"
+  },
+  {
+    "title": "The Drama",
+    "genre": "Drama",
+    "year": 2026,
+    "director": "Kristoffer Borgli",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/drama.jpg",
+    "alt_text": "zendaya sitting on robert pattinson's lap with zendaya holding up her hand with a ring and smirking"
+  },
+  {
+    "title": "Milton Glaser: To Inform & Delight",
+    "genre": "Documentary",
+    "year": 2008,
+    "director": "Wendy Keys",
+    "rating": "2/5",
+    "path": "../assets/dataset_images/milton glaser.jpg",
+    "alt_text": "black silhouette of milton glaser with a swirly colorful hair, and an image of him in the bottom right corner"
+  },
+  {
+    "title": "Shadow of a Doubt",
+    "genre": "Thriller",
+    "year": 1943,
+    "director": "Alfred Hitchcock",
+    "rating": "3/5",
+    "path": "../assets/dataset_images/shadow of a doubt.jpg",
+    "alt_text": "illustrative poster with the title in the middle and a man and woman in the bottom left with a red crack going up, showing three different people inside"
+  },
+  {
+    "title": "Superman",
+    "genre": "Action",
+    "year": 2025,
+    "director": "James Gunn",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/superman.jpg",
+    "alt_text": "superman in the middle with his arms crossed and a background with light flares"
+  },
+  {
+    "title": "Zootopia 2",
+    "genre": "Animation",
+    "year": 2025,
+    "director": "Jared Bush, Byron Howard",
+    "rating": "3/5",
+    "path": "../assets/dataset_images/zootopia 2.webp",
+    "alt_text": "judy hopps and nick wild being squeezed together by a blue snake whose body is in the shape of the number 2"
+  },
+  {
+    "title": "Companion",
+    "genre": "Horror",
+    "year": 2025,
+    "director": "Drew Hancock",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/companion.webp",
+    "alt_text": "a girl wearing a pink headband and dress beign whispered to by a man, but her eyes are white and she is smirking"
+  },
+  {
+    "title": "La La Land",
+    "genre": "Romance",
+    "year": 2016,
+    "director": "Damien Chazelle",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/la la land.jpg",
+    "alt_text": "emma stone in a yellow dress dancing with ryan gosling in a suit with a purple skyline behind them"
+  },
+  {
+    "title": "Stories We Tell",
+    "genre": "Documentary",
+    "year": 2012,
+    "director": "Sarah Polley",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/stories we tell.jpg",
+    "alt_text": "a snowy bridge with a blond woman laughing and walking with a man who's back is facing the camera, and the title very large in the center along with all it's awards"
+  },
+  {
+    "title": "Twinless",
+    "genre": "Comedy",
+    "year": 2025,
+    "director": "James Sweeney",
+    "rating": "3/5",
+    "path": "../assets/dataset_images/twinless.jpg",
+    "alt_text": "rainbow of silhouettes of two people next to each other, and two people of these silhouettes are real men, but their silhouettes are not connected, they are wearing similar sweaters as well"
+  },
+  {
+    "title": "Meshes of the Afternoon",
+    "genre": "Avant-Garde",
+    "year": 1943,
+    "director": "Maya Deren, Alexander Hammid",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/meshes.jpg",
+    "alt_text": "a dark brown background with a woman's hair shilouetted in lime green, her face and hand are white and she holds a knife"
+  },
+  {
+    "title": "As Good as It Gets",
+    "genre": "Romance",
+    "year": 1997,
+    "director": "James L Brooks",
+    "rating": "2/5",
+    "path": "../assets/dataset_images/as good as it gets.jpg",
+    "alt_text": "a man wearing sunglasses holding a dog in the air with plastic gloves on, smiling"
+  },
+  {
+    "title": 1917,
+    "genre": "War",
+    "year": 2019,
+    "director": "Sam Mendes",
+    "rating": "3.5/5",
+    "path": "../assets/dataset_images/1917.JPG",
+    "alt_text": "a young man standing in the middle of many soldiers and exxplosions, with the title having a sunset as its fill"
+  },
+  {
+    "title": "A Agente Secreto (The Secret Agent)",
+    "genre": "Drama",
+    "year": 2025,
+    "director": "Kleber Mendonça Filho",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/secret agent.jpg",
+    "alt_text": "a man standing in a yellow round phone booth with a red phone, and the wall behind him is a bunch of what look like missing posters"
+  },
+  {
+    "title": "Get Out",
+    "genre": "Horror",
+    "year": 2017,
+    "director": "Jordan Peele",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/get out.webp",
+    "alt_text": "a white background with a single wide rectangle in the middle with a pair of eyes looking tot he left, and a black text on the background with the title"
+  },
+  {
+    "title": "The Conversation",
+    "genre": "Drama",
+    "year": 1974,
+    "director": "Francis Ford Coppola",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/conversation.JPG",
+    "alt_text": "a man holding half a headphone up to his ear, with a lot of wires connecting to the bottom where there is an old audio player and a circular target of two people talking extremely close up"
+  },
+  {
+    "title": "Don't Worry Darling",
+    "genre": "Drama",
+    "year": 2022,
+    "director": "Olivia Wilde",
+    "rating": "3/5",
+    "path": "../assets/dataset_images/dont worry darling.JPG",
+    "alt_text": "an airplaine falling out of the sky above a house with palm trees int he background and a 50s style car with a couple kissing"
+  },
+  {
+    "title": "John Wick",
+    "genre": "Action",
+    "year": 2014,
+    "director": "Chad Stahelski",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/john wick.jpg",
+    "alt_text": "keanu reeves walking down a street with something on fire next to him, and he is wearing a black suit holding a gun with cuts on his face"
+  },
+  {
+    "title": "Children of Men",
+    "genre": "Action",
+    "year": 2006,
+    "director": "Alfonso Cuarón",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/children of men.jpg",
+    "alt_text": "a man extremely beat up peering around a corner of a busted up wall with the title in red text along the wall"
+  },
+  {
+    "title": "In the Mood for Love",
+    "genre": "Drama",
+    "year": 2000,
+    "director": "Wong Kar-Wai",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/in the mood for love.jpg",
+    "alt_text": "a red background with a woman laying diagonally and a man resting his head in her lap with the title fading behind them"
+  },
+  {
+    "title": "People We Meet on Vacation",
+    "genre": "Romance",
+    "year": 2026,
+    "director": "Brett Haley",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/people we meet on vacation.jpg",
+    "alt_text": "a man looking back smiling to a woman on his back who is laughing, and a colorful blurry background behind them"
+  },
+  {
+    "title": "The Thursday Murder Club",
+    "genre": "Mystery",
+    "year": 2025,
+    "director": "Chris Columbus",
+    "rating": "2/5",
+    "path": "../assets/dataset_images/thursday murder.webp",
+    "alt_text": "a slice of vanilla and jelly cake on a fancy plate with a knife stuck in the middle with red jelly spilling over that looks like blood"
+  },
+  {
+    "title": "Do the Right Thing",
+    "genre": "Drama",
+    "year": 1989,
+    "director": "Spike Lee",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/do the right thing.jpg",
+    "alt_text": "the title is written in chalk as an older white man and a younder black man holding a pizza box look up at the camera, and a girl in laying down drawing the chalk with a stick figure image of a man with a gun"
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "genre": "Drama",
+    "year": 2004,
+    "director": "Michel Gondry",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/eternal sunshine.jpg",
+    "alt_text": "jim carrey is in the bottom left corner looking up and in the top right corner he is laying down in the snow next to a blue haired kate winslet with a crack in the ice next to them"
+  },
+  {
+    "title": "Memento",
+    "genre": "Mystery",
+    "year": 2000,
+    "director": "Christopher Nolan",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/memento.jpg",
+    "alt_text": "a polaroid picture of a man in a suit, another polaroid of a woman within the polaroid, and this continues inward indefinitely"
+  },
+  {
+    "title": "Cléo from 5 to 7",
+    "genre": "Avant-Garde",
+    "year": 1962,
+    "director": "Angès Varda",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/cleo from 5 to 7.jpg",
+    "alt_text": "a painting of a woman looking at herself in the mirror with a clock overlayed on top"
+  },
+  {
+    "title": "Bottoms",
+    "genre": "Comedy",
+    "year": 2023,
+    "director": "Emma Seligman",
+    "rating": "3/5",
+    "path": "../assets/dataset_images/bottoms.jpg",
+    "alt_text": "two women standing on top of two football players, and each woman has another woman holding onto their sides"
+  },
+  {
+    "title": "The Outsiders",
+    "genre": "Drama",
+    "year": 1983,
+    "director": "Francis Ford Coppola",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/outsiders.jpg",
+    "alt_text": "a watercolor style poster with a skyline of a sunrise, and the light from the sun has the faces of mulitple boys in it"
+  },
+  {
+    "title": "Citizen Kane",
+    "genre": "Drama",
+    "year": 1941,
+    "director": "Orson Welles",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/citizen kane.jpg",
+    "alt_text": "an illustrative poster with a man in the top left diagonally placed looking down at a blonde woman looking up at him, and a woman with brown hair behind the blonde woman also looking up at the man. The title is in the middle in red"
+  },
+  {
+    "title": "Now You See Me: Now You Don't",
+    "genre": "Action",
+    "year": 2025,
+    "director": "Ruben Fleischer",
+    "rating": "2.5/5",
+    "path": "../assets/dataset_images/now you see me now you dont.webp",
+    "alt_text": "a background of multiple staircases overlapping creating an optical illusion, and sporadically spaced out are nine people with only one woman standing upside down, the title at the bottom"
+  },
+  {
+    "title": "Hail, Cesar!",
+    "genre": "Drama",
+    "year": 2016,
+    "director": "Coen Brothers",
+    "rating": "3.5/5",
+    "path": "../assets/dataset_images/hail caesar.jpg",
+    "alt_text": "a row of 5 headshots of the actors at the top of the poster, with the title in red in the middle, and below the title is a man in a grey suit carrying a man wearing old roman clothes over his shoulder, the roman helmet is on the gorund"
+  },
+  {
+    "title": "Sinners",
+    "genre": "Horror",
+    "year": 2025,
+    "director": "Ryan Coogler",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/sinners.webp",
+    "alt_text": "michael b jordan standing in the middle looking down with a yellow to red sunset behind him, with shadow figures on the horizon line and the title in the middle in yellow"
+  },
+  {
+    "title": "Wake Up Dead Man",
+    "genre": "Mystery",
+    "year": 2025,
+    "director": "Rian Johnson",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/wake up deadman.jpg",
+    "alt_text": "daniel craig squatting looking down at the camera that seems to be inside a grave, with 10 other people looking down into the grave as well and a church in the background"
+  },
+  {
+    "title": "The Long Walk",
+    "genre": "Drama",
+    "year": 2025,
+    "director": "Francis Lawrence",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/long walk.jpg",
+    "alt_text": "the camera is positioned under a man standing with his legs apart, and we see two boys walking on a road with a few behind them and tanks on each side. The man we are positioned under is also holding a gun and the title is on the road in orange"
+  },
+  {
+    "title": "Frankenstein",
+    "genre": "Horror",
+    "year": 2025,
+    "director": "Guillermo del Toro",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/frankenstein.jpg",
+    "alt_text": "a snowy landscape with an old ship crahsed into the ice. A figure is standing in the center facing away from the camera with a heavy fur coat and the title written in script in the middle"
+  },
+  {
+    "title": "Death Becomes Her",
+    "genre": "Comedy",
+    "year": 1992,
+    "director": "Robert Zemeckis",
+    "rating": "3.5/5",
+    "path": "../assets/dataset_images/death becomes her.webp",
+    "alt_text": "a man in a suit standing in between two woman, the one on his left has her head twisted backwards and the woman on his right has a whole in her stomach where he is holding candels through"
+  },
+  {
+    "title": "Weapons",
+    "genre": "Horror",
+    "year": 2025,
+    "director": "Zach Cregger",
+    "rating": "3/5",
+    "path": "../assets/dataset_images/weapons.jpg",
+    "alt_text": "a few kids running with their arms down each making a triangle shape, and houses line each side of the street and the title is at the bottom in red"
+  },
+  {
+    "title": "It's What's Inside",
+    "genre": "Horror",
+    "year": 2024,
+    "director": "Greg Jardin",
+    "rating": "3.5/5",
+    "path": "../assets/dataset_images/its whats inside.jpg",
+    "alt_text": "eight people standing in/crawling out of a brief case, and each person has a red wire around them connecting each person"
+  },
+  {
+    "title": "Isle of Dogs",
+    "genre": "Animation",
+    "year": 2018,
+    "director": "Wes Anderson",
+    "rating": "4/5",
+    "path": "../assets/dataset_images/isle of dogs.jpg",
+    "alt_text": "a grid of stop-motion dogs all looking at the camera, and at the very bottom in the center is a single human boy with a black eye. The title is in red japanese kanji with the english words on top"
+  },
+  {
+    "title": "Alien",
+    "genre": "Horror",
+    "year": 1979,
+    "director": "Ridley Scott",
+    "rating": "5/5",
+    "path": "../assets/dataset_images/alien.jpg",
+    "alt_text": "a black background with a floating egg in the center with green smoke spilling out of it. The title is on the very top and there is a dark fence/metal wiring at the bottom"
+  },
+  {
+    "title": "On The Count of Three",
+    "genre": "Drama",
+    "year": 2021,
+    "director": "Jerrod Carmichael",
+    "rating": "4.5/5",
+    "path": "../assets/dataset_images/count of three.jpg",
+    "alt_text": "two men walking next to each other on a white background, one is holding a gun and wearing a colorful jacket while the other is wearing a blue workers jumpsuit with an orange jacket"
+  }
+]
