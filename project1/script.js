@@ -71,6 +71,43 @@ function createRatedFilter(rated) {
 })
 }
 
+//stack overflow example
+// var results = [];
+// var searchVal = "title";
+// for (var i=0 ; i < movies.length ; i++)
+// {
+//     if (title[i][searchField] == searchVal) {
+//         results.push(title[i]);
+//     }
+// }
+
+// w3 school example
+// function search(title) {
+//     document.querySelector(`[data-title="${title}"]`).addEventListener("input", function(event) {
+//         let movieTitles = document.querySelector("#movies")
+//         movieTitles.innerHTML = ""
+//         input = document.getElementById("myInput");
+//         filter = input.value.toLowerCase();
+//         for(let i = 0; i < filteresMovies,length; i++) {
+//             makeMovie(filteredMovies[i])
+//         }
+//         let filters = document.querySelectorAll(".filter")
+//         styleFilters(filters, title)
+//     }
+//     var input, filter, i, txtValue;
+//     input = document.getElementById("myInput");
+//     filter = input.value.toUpperCase();
+//     for (i = 0; i < li.length; i++) {
+//         a = li[i].getElementsByTagName("a")[0];
+//         txtValue = a.textContent || a.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             li[i].style.display = "";
+//         } else {
+//             li[i].style.display = "none";
+//         }
+//     }
+// }
+
 createGenreFilter("drama")
 createGenreFilter("all")
 createGenreFilter("horror")
