@@ -120,7 +120,7 @@
         }
 
 /*copy from w3 school example */
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -154,7 +154,7 @@
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
-}
+} */
 
 /* for data filter in json */
 
