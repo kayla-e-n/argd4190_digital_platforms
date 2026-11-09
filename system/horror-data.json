@@ -1,0 +1,82 @@
+[
+  {
+    "titles": "bodies bodies bodies",
+    "year": "2020s",
+    "deaths": 5,
+    "supernatural-humans": "humans",
+    "my-rating": 3,
+    "gore": 7
+  },
+  {
+    "titles": "resident evil",
+    "year": "2020s",
+    "deaths": 11,
+    "supernatural-humans": "supernatural",
+    "my-rating": 5,
+    "gore": 9
+  },
+  {
+    "titles": "good boy",
+    "year": "2020s",
+    "deaths": 2,
+    "supernatural-humans": "supernatural",
+    "my-rating": 2,
+    "gore": 2
+  },
+  {
+    "titles": "the blackening",
+    "year": "2020s",
+    "deaths": 3,
+    "supernatural-humans": "humans",
+    "my-rating": 3,
+    "gore": 5
+  },
+  {
+    "titles": "scream",
+    "year": "1990s",
+    "deaths": 7,
+    "supernatural-humans": "humans",
+    "my-rating": 5,
+    "gore": 7
+  },
+  {
+    "titles": "tucker and dale vs evil",
+    "year": "2010s",
+    "deaths": 16,
+    "supernatural-humans": "humans",
+    "my-rating": 4,
+    "gore": 9
+  },
+  {
+    "titles": "ready or not",
+    "year": "2010s",
+    "deaths": 22,
+    "supernatural-humans": "supernatural",
+    "my-rating": 4,
+    "gore": 9
+  },
+  {
+    "titles": "ready or not 2: here i come",
+    "year": "2020s",
+    "deaths": 52,
+    "supernatural-humans": "supernatural",
+    "my-rating": 3,
+    "gore": 9
+  },
+  {
+    "titles": "five nights at freddy's",
+    "year": "2020s",
+    "deaths": 4,
+    "supernatural-humans": "supernatural",
+    "my-rating": 2,
+    "gore": 1
+  },
+  {
+    "titles": "obsession",
+    "year": "2020s",
+    "deaths": 5,
+    "supernatural-humans": "supernatural",
+    "my-rating": 5,
+    "gore": 9
+  }
+]
