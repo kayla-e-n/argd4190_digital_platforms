@@ -5,7 +5,8 @@
     "deaths": 5,
     "supernatural-humans": "humans",
     "my-rating": 3,
-    "gore": 7
+    "gore": 7,
+    "face": "assets/bodies-bodies-bodies.png"
   },
   {
     "titles": "resident evil",
@@ -13,7 +14,8 @@
     "deaths": 11,
     "supernatural-humans": "supernatural",
     "my-rating": 5,
-    "gore": 9
+    "gore": 9,
+    "face": "assets/resident-evil.png"
   },
   {
     "titles": "good boy",
@@ -21,7 +23,8 @@
     "deaths": 2,
     "supernatural-humans": "supernatural",
     "my-rating": 2,
-    "gore": 2
+    "gore": 2,
+    "face": "assets/good-boy.png"
   },
   {
     "titles": "the blackening",
@@ -29,7 +32,8 @@
     "deaths": 3,
     "supernatural-humans": "humans",
     "my-rating": 3,
-    "gore": 5
+    "gore": 5,
+    "face": "assets/blackening.png"
   },
   {
     "titles": "scream",
@@ -37,7 +41,8 @@
     "deaths": 7,
     "supernatural-humans": "humans",
     "my-rating": 5,
-    "gore": 7
+    "gore": 7,
+    "face": "assets/scream.png"
   },
   {
     "titles": "tucker and dale vs evil",
@@ -45,7 +50,8 @@
     "deaths": 16,
     "supernatural-humans": "humans",
     "my-rating": 4,
-    "gore": 9
+    "gore": 9,
+    "face": "assets/tucker-and-dale.png"
   },
   {
     "titles": "ready or not",
@@ -53,7 +59,8 @@
     "deaths": 22,
     "supernatural-humans": "supernatural",
     "my-rating": 4,
-    "gore": 9
+    "gore": 9,
+    "face": "assets/ready-or-not.png"
   },
   {
     "titles": "ready or not 2: here i come",
@@ -61,7 +68,8 @@
     "deaths": 52,
     "supernatural-humans": "supernatural",
     "my-rating": 3,
-    "gore": 9
+    "gore": 9,
+    "face": "assets/ready-or-not-2.png"
   },
   {
     "titles": "five nights at freddy's",
@@ -69,7 +77,8 @@
     "deaths": 4,
     "supernatural-humans": "supernatural",
     "my-rating": 2,
-    "gore": 1
+    "gore": 1,
+    "face": "assets/fnaf.png"
   },
   {
     "titles": "obsession",
@@ -77,6 +86,7 @@
     "deaths": 5,
     "supernatural-humans": "supernatural",
     "my-rating": 5,
-    "gore": 9
+    "gore": 9,
+    "face": "assets/obsession.png"
   }
 ]
